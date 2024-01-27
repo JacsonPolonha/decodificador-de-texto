@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Decodificador de texto</title>
+</head>
+<body>
+    <main class="content">
+        <section class="logo">
+            <img src="assets/Frame 6.png" alt="logotipo da alura">
+        </section>
+
+        <section class="text">
+            <label for="texto">Texto</label>
+            <textarea name="texto" id="texto" cols="30" rows="10" placeholder="Digite seu texto"></textarea>
+            <div>
+                <div class="mensagem-validacao">
+                    <img src="assets/bi_exclamation-circle-fill.png" alt="">
+                    <p>Apenas letras minúsculas e sem acento</p>
+                </div>
+                <div class="botoes">
+                    <button type="submit" value="Criptografar" onclick="criptografar()" class="criptografar">
+                        Criptografar
+                    </button>
+                    <button type="submit" value="Descriptografar" onclick="descriptografar()" class="descriptografar">
+                        Descriptografar
+                    </button>
+                </div>
+            </div>
+        </section>
+
+        <section class="result">
+            <img src="assets/High quality products 1 1.png" alt="imagem personagem analisando">
+            <p>Nenhuma mensagem encontrada</p>
+        </section>
+    </main>
+    <footer class="rodape">
+        <p>Desenvolvido por <a href="https://github.com/JacsonPolonha" target="_blank">Jacson Polonha</a> 2024</p>
+    </footer>
+</body>
+</html>

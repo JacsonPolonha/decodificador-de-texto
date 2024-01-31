@@ -3,12 +3,16 @@
 let result = document.querySelector('.result-message');
 
 function criptografar() {
-    let texto = document.querySelector('#texto').value;
-
-    result.innerHTML = texto.replace(/e/g, 'enter').replace(/i/g, 'imes').replace(/a/g, 'ai').replace(/o/g, 'ober').replace(/u/g, 'ufat');
-    let botao = document.querySelector('.copia');
-    botao.style.display = 'block';
-
+    let texto = document.querySelector('#texto').value
+    if(/[A-ZÀ-ÖØ-Þ]/.test(texto)){
+        alert("Erro: O texto não pode conter letras maiúsculas.");
+    } else if(/[À-ÖØ-Þà-öø-ÿ]/.test(texto)){
+        alert("Erro: O texto não pode conter caracteres acentuados");
+    } else {
+        result.innerHTML = texto.replace(/e/g, 'enter').replace(/i/g, 'imes').replace(/a/g, 'ai').replace(/o/g, 'ober').replace(/u/g, 'ufat');
+        let botao = document.querySelector('.copia');
+        botao.style.display = 'block';
+    }
 }
 
 function descriptografar() {

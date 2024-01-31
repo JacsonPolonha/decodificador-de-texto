@@ -1,0 +1,40 @@
+@media  (min-width: 376px) and (max-width: 768px) {
+    .content {
+        flex-direction: column;
+    }
+
+    .result {
+        width: 100%;
+    }
+
+    .result img {
+        display: none;
+    }
+}
+
+@media  (max-width: 375px) {
+    .content {
+        flex-direction: column;
+    }
+
+    .result {
+        width: 100%;
+    }
+
+    .result img {
+        display: none;
+    }
+
+    .text .botoes {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .text .criptografar {
+        width: 100%;
+    }
+    
+    .text .descriptografar {
+        width: 100%;
+    }
+}
